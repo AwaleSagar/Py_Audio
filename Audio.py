@@ -23,6 +23,6 @@ def array_2_audio(audio_array,filename = 'test',samplerate= 44100):
 song = audio_2_array(song_path)
 array_2_audio(song)
 
-#Reverse song -
+#Reverse song - @@$$
 rev_song = np.flip(song)
 array_2_audio(rev_song,filename='rev_audio')
