@@ -61,7 +61,6 @@ def spectrum_analysis(path: str) -> Dict[str, Any]:
     """
     sample_rate, data = read_audio(path)
 
-    # Mix to mono for duration calculation.
     num_samples = data.shape[0]
     duration = num_samples / sample_rate
 

@@ -23,7 +23,7 @@ def read_audio(path: str) -> Tuple[int, NDArray[np.float64]]:
         ValueError: If the file is not a valid WAV file.
     """
     sample_rate, data = read(path)
-    return sample_rate, np.array(data, dtype=np.float64)
+    return sample_rate, data.astype(np.float64, copy=False)
 
 
 def write_audio(

@@ -29,6 +29,10 @@ def change_speed(
     A *factor* greater than 1 speeds up the audio (fewer output samples);
     a *factor* less than 1 slows it down (more output samples).
 
+    .. note::
+       Very large factors may reduce the audio to just a few samples,
+       which is unlikely to be musically useful.
+
     Args:
         data: Audio samples as a numpy array (1-D or 2-D).
         factor: Speed multiplier.  Must be positive.
