@@ -1,3 +1,6 @@
+# Generated audio outputs
+data/filtered.wav
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
